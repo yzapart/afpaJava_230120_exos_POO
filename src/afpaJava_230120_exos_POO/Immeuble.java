@@ -4,8 +4,8 @@ public class Immeuble extends Batiment {
 	
 	private int nbAppart;
 	
-	public Immeuble(String adresse, int surfaceHabitable, int nbAppart) {
-		super(adresse, surfaceHabitable);
+	public Immeuble(String adresse, int surfaceHabitable, Personne proprietaire, int nbAppart) {
+		super(adresse, surfaceHabitable, proprietaire);
 		this.nbAppart = nbAppart;
 	}
 	

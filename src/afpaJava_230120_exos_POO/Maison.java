@@ -4,8 +4,8 @@ public class Maison extends Batiment {
 
 	private int nbPieces, surfaceJardin;
 	
-	public Maison(String adresse, int surfaceHabitable, int surfaceJ, int nbPieces) {
-		super(adresse, surfaceHabitable);
+	public Maison(String adresse, int surfaceHabitable, Personne proprietaire, int surfaceJ, int nbPieces) {
+		super(adresse, surfaceHabitable, proprietaire);
 		this.surfaceJardin = surfaceJ;
 		this.nbPieces = nbPieces;
 	}

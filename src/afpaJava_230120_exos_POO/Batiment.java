@@ -4,10 +4,12 @@ public class Batiment {
 
 	private String adresse;
 	private int surfaceHabitable;
-
-	Batiment(String adresse, int surfaceHabitable) {
+	private Personne proprietaire;
+	
+	Batiment(String adresse, int surfaceHabitable, Personne proprietaire) {
 		this.adresse = adresse;
 		this.surfaceHabitable = surfaceHabitable;
+		this.proprietaire = proprietaire;
 	}
 	
 	public String getAdresse() {
@@ -18,8 +20,12 @@ public class Batiment {
 		return surfaceHabitable;
 	}
 
+	public Personne getProprietaire() {
+		return proprietaire;
+	}
+	
 	public String toStr() {
-		return this.getClass().getName().substring(getClass().getName().indexOf(".")+1) + "\t" + adresse + "\t" + surfaceHabitable + "m² hab.\tImp.: " + impot(5.6, 1.2) + " €";
+		return this.getClass().getName().substring(getClass().getName().indexOf(".")+1) + "\t" + adresse + "\t" + surfaceHabitable + "m² hab.\tImp.: " + impot(5.6, 1.2) + " €\tProp.: " + proprietaire.toStr();
 	}
 
 	public double impot(double TauxA, double tauxB) {
