@@ -12,4 +12,6 @@ public class Appartement extends Immeuble {
 		this.location = location;
 		this.locataire = locataire;
 	}
+	
+	// ajouter un constructeur avec juste le proprio
 }
