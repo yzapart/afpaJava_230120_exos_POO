@@ -6,11 +6,16 @@ public class Batiment {
 	private int surfaceHabitable;
 	private Personne proprietaire;
 	
-	Batiment(String adresse, int surfaceHabitable, Personne proprietaire) {
+	public Batiment(String adresse, int surfaceHabitable, Personne proprietaire) {
 		this.adresse = adresse;
 		this.surfaceHabitable = surfaceHabitable;
 		this.proprietaire = proprietaire;
 	}
+	
+	public Batiment(String adresse, Personne proprietaire) {
+		this.proprietaire = proprietaire;
+	}
+	
 	
 	public String getAdresse() {
 		return adresse;

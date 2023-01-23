@@ -9,6 +9,10 @@ public class Immeuble extends Batiment {
 		this.nbAppart = nbAppart;
 	}
 	
+	public Immeuble(String adresse, Personne proprietaire) {
+		super(adresse, proprietaire);
+	}
+	
 	public int getNbAppart() {
 		return nbAppart;
 	}

@@ -5,10 +5,17 @@ public class Appartement extends Immeuble {
 	private boolean location;
 	private Personne locataire;
 
-	public Appartement(int num, int nbPieces, boolean location, Personne proprietaire, Personne locataire) {
-		super(proprietaire);
+//	public Appartement(int num, int nbPieces, boolean location, Personne proprietaire, Personne locataire) {
+//		super(proprietaire);
+//		this.num = num;
+//		this.nbPieces = nbPieces;
+//		this.location = location;
+//		this.locataire = locataire;
+//	}
+	
+	public Appartement(String adresse, int num, int nbPieces, Personne proprietaire, boolean location, Personne locataire) {
+		super(adresse, proprietaire);
 		this.num = num;
-		this.nbPieces = nbPieces;
 		this.location = location;
 		this.locataire = locataire;
 	}
