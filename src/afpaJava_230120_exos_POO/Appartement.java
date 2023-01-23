@@ -13,5 +13,5 @@ public class Appartement extends Immeuble {
 		this.locataire = locataire;
 	}
 	
-	// ajouter un constructeur avec juste le proprio
+	// on peut ajouter un constructeur avec juste le proprio pour créer un apaprtement avec suelement le proprio
 }
